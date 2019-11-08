@@ -80,6 +80,8 @@ goto error
 
 :init
 
+set MAVEN_OPTS=-Dhttp.proxyHost=proxyaws.pole-emploi.intra -Dhttp.proxyPort=8080 -Dhttps.proxyHost=proxyaws.pole-emploi.intra -Dhttps.proxyPort=8080
+
 set MAVEN_CMD_LINE_ARGS=%*
 
 @REM Find the project base dir, i.e. the directory that contains the folder ".mvn".
